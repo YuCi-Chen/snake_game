@@ -8,7 +8,7 @@ screen = Screen()
 screen.setup(width=600, height=600) #using KEYWORD arguments
 screen.bgcolor("black")
 screen.title("My Snake Game")
-screen.tracer(0) #turn the tracer off. until we call update
+screen.tracer(0) #turn the tracer off. until I call update
 # , the screen's not going to refresh anything
 
 snake = Snake()
