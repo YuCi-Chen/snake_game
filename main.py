@@ -49,4 +49,5 @@ while game_is_on:
     #If head collides with any segment in the tail:
     #trigger game_over
 
+
 screen.exitonclick()
