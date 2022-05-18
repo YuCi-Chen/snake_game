@@ -2,9 +2,12 @@ from turtle import Turtle
 import random
 
 
-class Food(Turtle): # Inheriting from Turtle
+class Food(Turtle):
 
     def __init__(self):
+        """
+        create the food
+        """
         super().__init__()
         self.shape("circle")
         self.penup()
@@ -14,6 +17,10 @@ class Food(Turtle): # Inheriting from Turtle
         self.refresh()
 
     def refresh(self):
+        """
+        every time the refresh function is called,
+        the food will go to its original place
+        """
         random_x = random.randint(-200, 200)
         random_y = random.randint(-200, 200)
         self.goto(x=random_x, y=random_y)
